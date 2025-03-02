@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import drotm from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-wasm-drotm/tags). For example,
+
+```javascript
 import drotm from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@v0.0.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Module } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@v0.0.0-deno/mod.js';
+import { Module } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@deno/mod.js';
 ```
 
 #### drotm.main( N, x, strideX, y, strideY, param )
@@ -332,7 +337,7 @@ The function has the following additional parameters:
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import drotm from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@v0.0.0-deno/mod.js';
+import drotm from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
