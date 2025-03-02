@@ -262,20 +262,20 @@ tape( 'the `main` method applies a plane rotation', function test( t ) {
 
 	drotm.main( 3, x, 2, y, 2, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-18.0, // 0
 		2.0,
 		-24.0, // 1
 		4.0,
 		-30.0  // 2
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		2.0, // 0
 		7.0,
 		6.0, // 1
 		9.0,
 		10.0 // 2
-	] );
+	]);
 
 	isApprox( t, x, xe, 1.0 );
 	isApprox( t, y, ye, 1.0 );
@@ -298,20 +298,20 @@ tape( 'the `main` method applies a plane rotation', function test( t ) {
 
 	drotm.main( 2, x, 3, y, 3, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		6.0, // 0
 		2.0,
 		3.0,
 		9.0, // 1
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		-1.0, // 0
 		7.0,
 		8.0,
 		-4.0, // 1
 		10.0
-	] );
+	]);
 
 	isApprox( t, x, xe, 1.0 );
 	isApprox( t, y, ye, 1.0 );
@@ -344,20 +344,20 @@ tape( 'the `main` method supports an `x` stride', function test( t ) {
 
 	drotm.main( 2, x, 2, y, 1, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-17.0, // 0
 		2.0,
 		-18.0, // 1
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		8.0,  // 0
 		13.0, // 1
 		8.0,
 		9.0,
 		10.0
-	] );
+	]);
 
 	isApprox( t, x, xe, 1.0 );
 	isApprox( t, y, ye, 1.0 );
@@ -380,20 +380,20 @@ tape( 'the `main` method supports an `x` stride', function test( t ) {
 
 	drotm.main( 2, x, 3, y, 1, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-18.0, // 0
 		2.0,
 		3.0,
 		-21.0, // 1
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		2.0, // 0
 		8.0, // 1
 		8.0,
 		9.0,
 		10.0
-	] );
+	]);
 
 	isApprox( t, x, xe, 1.0 );
 	isApprox( t, y, ye, 1.0 );
@@ -426,20 +426,20 @@ tape( 'the `main` method supports a negative `x` stride', function test( t ) {
 
 	drotm.main( 2, x, -2, y, 1, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-21.0, // 1
 		2.0,
 		-18.0, // 0
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		6.0,  // 0
 		2.0, // 1
 		8.0,
 		9.0,
 		10.0
-	] );
+	]);
 
 	isApprox( t, x, xe, 2.0 );
 	isApprox( t, y, ye, 2.0 );
@@ -462,20 +462,20 @@ tape( 'the `main` method supports a negative `x` stride', function test( t ) {
 
 	drotm.main( 3, x, -2, y, 1, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		8.0, // 2
 		2.0,
 		7.0, // 1
 		4.0,
 		6.0  // 0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		-5.0, // 0
 		-3.0, // 1
 		-1.0, // 2
 		9.0,
 		10.0
-	] );
+	]);
 
 	isApprox( t, x, xe, 2.0 );
 	isApprox( t, y, ye, 2.0 );
@@ -508,20 +508,20 @@ tape( 'the `main` method supports a `y` stride', function test( t ) {
 
 	drotm.main( 3, x, 1, y, 2, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-17.0, // 0
 		-22.0, // 1
 		-27.0, // 2
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		8.0,  // 0
 		7.0,
 		12.0, // 1
 		9.0,
 		16.0  // 2
-	] );
+	]);
 
 	isApprox( t, x, xe, 1.0 );
 	isApprox( t, y, ye, 1.0 );
@@ -544,20 +544,20 @@ tape( 'the `main` method supports a `y` stride', function test( t ) {
 
 	drotm.main( 2, x, 1, y, 3, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-18.0, // 0
 		-27.0, // 1
 		3.0,
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		2.0, // 0
 		7.0,
 		8.0,
 		4.0, // 1
 		10.0
-	] );
+	]);
 
 	isApprox( t, x, xe, 1.0 );
 	isApprox( t, y, ye, 1.0 );
@@ -590,20 +590,20 @@ tape( 'the `main` method supports a negative `y` stride', function test( t ) {
 
 	drotm.main( 2, x, 1, y, -2, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		8.0, // 0
 		6.0, // 1
 		3.0,
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		-2.0, // 1
 		7.0,
 		-1.0, // 0
 		9.0,
 		10.0
-	] );
+	]);
 
 	isApprox( t, x, xe, 2.0 );
 	isApprox( t, y, ye, 2.0 );
@@ -626,20 +626,20 @@ tape( 'the `main` method supports a negative `y` stride', function test( t ) {
 
 	drotm.main( 3, x, 1, y, -2, param );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-30.0, // 0
 		-24.0, // 1
 		-18.0, // 2
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		6.0, // 2
 		7.0,
 		4.0, // 1
 		9.0,
 		2.0  // 0
-	] );
+	]);
 
 	isApprox( t, x, xe, 2.0 );
 	isApprox( t, y, ye, 2.0 );

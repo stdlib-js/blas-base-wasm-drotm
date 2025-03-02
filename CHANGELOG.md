@@ -4,13 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-04)
+## Unreleased (2025-03-02)
 
 <section class="features">
 
 ### Features
 
--   [`c442b93`](https://github.com/stdlib-js/stdlib/commit/c442b93d2ed3af2a2f50402b4b0dc87e9090f596) - add `blas/base/drotm-wasm` [(#3021)](https://github.com/stdlib-js/stdlib/pull/3021)
+-   [`a519986`](https://github.com/stdlib-js/stdlib/commit/a519986026f8c8da8c4cd8ef8934356dcbf02cce) - add `blas/base/wasm/drotm`
 
 </section>
 
@@ -22,8 +22,8 @@
 
 <details>
 
--   [`321e49e`](https://github.com/stdlib-js/stdlib/commit/321e49e9965648f1b5eb6a840fe454959af0ec49) - **docs:** add missing periods to list items _(by Philipp Burckhardt)_
--   [`c442b93`](https://github.com/stdlib-js/stdlib/commit/c442b93d2ed3af2a2f50402b4b0dc87e9090f596) - **feat:** add `blas/base/drotm-wasm` [(#3021)](https://github.com/stdlib-js/stdlib/pull/3021) _(by Aman Bhansali, Athan Reines)_
+-   [`8a80a81`](https://github.com/stdlib-js/stdlib/commit/8a80a811f4c4d710106c73b6381fe0d3ed2ab901) - **build:** generalize scripts to auto-update copyright year _(by Athan Reines)_
+-   [`a519986`](https://github.com/stdlib-js/stdlib/commit/a519986026f8c8da8c4cd8ef8934356dcbf02cce) - **feat:** add `blas/base/wasm/drotm` _(by Athan Reines)_
 
 </details>
 
@@ -35,11 +35,9 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 1 person contributed to this release. Thank you to this contributor:
 
--   Aman Bhansali
 -   Athan Reines
--   Philipp Burckhardt
 
 </section>
 

@@ -225,20 +225,20 @@ tape( 'a module instance has an `ndarray` method which supports an `x` stride', 
 
 	mod.ndarray( 2, xp, 2, 0, yp, 1, 0, pp );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-17.0, // 0
 		2.0,
 		-18.0, // 1
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		8.0,  // 0
 		13.0, // 1
 		8.0,
 		9.0,
 		10.0
-	] );
+	]);
 
 	actualX = new Float64Array( 5 );
 	mod.read( xp, actualX );
@@ -291,20 +291,20 @@ tape( 'a module instance has an `ndarray` method which supports a negative `x` s
 
 	mod.ndarray( 2, xp, -2, 2, yp, 1, 0, pp );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-21.0, // 1
 		2.0,
 		-18.0, // 0
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		6.0,  // 0
 		2.0,  // 1
 		8.0,
 		9.0,
 		10.0
-	] );
+	]);
 
 	actualX = new Float64Array( 5 );
 	mod.read( xp, actualX );
@@ -411,20 +411,20 @@ tape( 'a module instance has an `ndarray` method which supports a `y` stride', f
 
 	mod.ndarray( 3, xp, 1, 0, yp, 2, 0, pp );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		-17.0, // 0
 		-22.0, // 1
 		-27.0, // 2
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		8.0,  // 0
 		7.0,
 		12.0, // 1
 		9.0,
 		16.0  // 2
-	] );
+	]);
 
 	actualX = new Float64Array( 5 );
 	mod.read( xp, actualX );
@@ -477,20 +477,20 @@ tape( 'a module instance has an `ndarray` method which supports a negative `y` s
 
 	mod.ndarray( 2, xp, 1, 0, yp, -2, 2, pp );
 
-	xe = new Float64Array( [
+	xe = new Float64Array([
 		8.0, // 0
 		6.0, // 1
 		3.0,
 		4.0,
 		5.0
-	] );
-	ye = new Float64Array( [
+	]);
+	ye = new Float64Array([
 		-2.0, // 1
 		7.0,
 		-1.0, // 0
 		9.0,
 		10.0
-	] );
+	]);
 
 	actualX = new Float64Array( 5 );
 	mod.read( xp, actualX );
