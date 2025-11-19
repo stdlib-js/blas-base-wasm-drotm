@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-16)
+## Unreleased (2025-11-19)
 
 <section class="features">
 
@@ -16,12 +16,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`803c894`](https://github.com/stdlib-js/stdlib/commit/803c8949799474e1679463caafd348f448e9c677) - ensure correct `this` context when creating a new Module instance
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`803c894`](https://github.com/stdlib-js/stdlib/commit/803c8949799474e1679463caafd348f448e9c677) - **fix:** ensure correct `this` context when creating a new Module instance _(by Philipp Burckhardt)_
 -   [`2ec2116`](https://github.com/stdlib-js/stdlib/commit/2ec2116fb43058cddc4bf726defbe60823bd2590) - **docs:** fix typo _(by Athan Reines)_
 -   [`14bab15`](https://github.com/stdlib-js/stdlib/commit/14bab159393b69aa3496cb3b715ea3b68de3e3d7) - **chore:** fix tests, spacing, and comments _(by Athan Reines)_
 -   [`8a80a81`](https://github.com/stdlib-js/stdlib/commit/8a80a811f4c4d710106c73b6381fe0d3ed2ab901) - **build:** generalize scripts to auto-update copyright year _(by Athan Reines)_
@@ -37,9 +48,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
