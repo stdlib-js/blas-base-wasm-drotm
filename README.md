@@ -35,14 +35,32 @@ limitations under the License.
 
 > Apply a modified Givens plane rotation.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-wasm-drotm
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import drotm from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@esm/index.mjs';
+var drotm = require( '@stdlib/blas-base-wasm-drotm' );
 ```
 
 #### drotm.main( N, x, strideX, y, strideY, param )
@@ -50,7 +68,7 @@ import drotm from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@es
 Applies a modified Givens plane rotation.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 var y = new Float64Array( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
@@ -73,7 +91,7 @@ The function has the following parameters:
 The `N` and stride parameters determine how values in the strided arrays are accessed at runtime. For example, to apply a modified Givens plane rotation to every other element,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
@@ -89,7 +107,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
@@ -110,7 +128,7 @@ drotm.main( 2, x1, 1, y1, 1, param );
 Applies a modified Givens plane rotation using alternative indexing semantics.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 var y = new Float64Array( [ 6.0, 7.0, 8.0, 9.0, 10.0 ] );
@@ -129,7 +147,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to apply a modified Givens plane rotation to every other element starting from the second element,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
@@ -151,7 +169,7 @@ Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@esm/index.mjs';
+var Memory = require( '@stdlib/wasm-memory' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -174,11 +192,11 @@ Applies a modified Givens plane rotation.
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@esm/index.mjs';
-import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@esm/index.mjs';
-import ones from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
-import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bytes-per-element@esm/index.mjs';
+var Memory = require( '@stdlib/wasm-memory' );
+var oneTo = require( '@stdlib/array-one-to' );
+var ones = require( '@stdlib/array-ones' );
+var zeros = require( '@stdlib/array-zeros' );
+var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -241,11 +259,11 @@ Applies a modified Givens plane rotation using alternative indexing semantics.
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@esm/index.mjs';
-import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@esm/index.mjs';
-import ones from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
-import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bytes-per-element@esm/index.mjs';
+var Memory = require( '@stdlib/wasm-memory' );
+var oneTo = require( '@stdlib/array-one-to' );
+var ones = require( '@stdlib/array-ones' );
+var zeros = require( '@stdlib/array-zeros' );
+var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -323,15 +341,10 @@ The function has the following additional parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import drotm from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-drotm@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var Float64Array = require( '@stdlib/array-float64' );
+var drotm = require( '@stdlib/blas-base-wasm-drotm' );
 
 var opts = {
     'dtype': 'float64'
@@ -346,10 +359,6 @@ var param = new Float64Array( [ 0.0, 0.0, 2.0, -3.0, 0.0 ] );
 
 drotm.ndarray( x.length, x, 1, 0, y, -1, y.length-1, param );
 console.log( y );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -373,7 +382,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -416,8 +425,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -442,13 +451,13 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/esm
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
 
-[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper/tree/esm
+[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper
 
-[@stdlib/blas/base/drotm]: https://github.com/stdlib-js/blas-base-drotm/tree/esm
+[@stdlib/blas/base/drotm]: https://github.com/stdlib-js/blas-base-drotm
 
 </section>
 
